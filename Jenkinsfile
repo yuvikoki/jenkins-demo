@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('changing directory') { 
             steps {
-                sh 'cd /home/ubuntu/'
+                sh 'cd /home/ubuntu/jenkins'
             }
         }
         stage('compiling') { 
             steps {
-                sh 'sudo javac /home/ubuntu/HelloWorld.java'
+                sh 'sudo javac /home/ubuntu/jenkins/HelloWorld.java'
             }
         }
         stage('Deploy') { 
